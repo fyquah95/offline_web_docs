@@ -1,0 +1,10 @@
+Tue, 15 Jul 2014 11:29:13 -0700
+uri.rb	Tue, 15 Jul 2014 09:23:55 -0700
+uri/common.rb	Tue, 15 Jul 2014 09:23:55 -0700
+uri/ftp.rb	Tue, 15 Jul 2014 09:23:55 -0700
+uri/generic.rb	Tue, 15 Jul 2014 09:23:55 -0700
+uri/http.rb	Tue, 15 Jul 2014 09:23:55 -0700
+uri/https.rb	Tue, 15 Jul 2014 09:23:55 -0700
+uri/ldap.rb	Tue, 15 Jul 2014 09:23:55 -0700
+uri/ldaps.rb	Tue, 15 Jul 2014 09:23:55 -0700
+uri/mailto.rb	Tue, 15 Jul 2014 09:23:55 -0700

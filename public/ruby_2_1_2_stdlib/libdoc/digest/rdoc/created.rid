@@ -1,0 +1,18 @@
+Tue, 15 Jul 2014 11:19:50 -0700
+digest/bubblebabble/bubblebabble.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/digest.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/lib/digest/hmac.rb	Tue, 15 Jul 2014 09:23:56 -0700
+digest/lib/digest.rb	Tue, 15 Jul 2014 09:23:56 -0700
+digest/md5/md5.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/md5/md5init.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/md5/md5ossl.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/rmd160/rmd160.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/rmd160/rmd160init.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/rmd160/rmd160ossl.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/sha1/sha1.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/sha1/sha1init.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/sha1/sha1ossl.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/sha2/lib/sha2.rb	Tue, 15 Jul 2014 09:23:56 -0700
+digest/sha2/sha2.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/sha2/sha2init.c	Tue, 15 Jul 2014 09:23:56 -0700
+digest/sha2/sha2ossl.c	Tue, 15 Jul 2014 09:23:56 -0700

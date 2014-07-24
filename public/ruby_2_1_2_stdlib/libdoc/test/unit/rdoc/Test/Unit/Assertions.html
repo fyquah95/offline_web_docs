@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <!-- classpage -- >
+    <!-- RD version: 0.28.0  -->
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta name='description' content='  Module : Test::Unit::Assertions  -   Ruby 2.1.2 ' />
+  <meta content="2014-07-15 11:25:37 -0700" http-equiv="change-date" />
+  <!-- rel_prefix  = '../..'  ENV['RDOC_FOR_WEBSITE']   = false-->
+    
+  <!-- rel_prefix = '../..'   asset_rel_prefix = '../..'  --> 
+  <title>Module: Test::Unit::Assertions (Ruby 2.1.2) </title>
+  <!-- link rel="stylesheet" href="../..css/obf.css"  -->
+  <link rel="stylesheet" href="../../css/inuit.css" >
+  <link rel="stylesheet" href="../../css/grid.inuit.css" >
+  <link rel="stylesheet" href="../../css/2011.css" type="text/css" >
+  <link rel="stylesheet" href="../../css/rdoc.css" type="text/css" >
+
+  <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/rubydoc.js" type="text/javascript" charset="utf-8"></script> 
+
+ 
+<script src="../../js/highlight.min.js"></script>
+<script> 
+  hljs.tabReplace = '  ';
+  hljs.initHighlightingOnLoad();
+  </script> 
+
+  <style type='text/css'>
+
+    #vulns-alert #vulns{
+      background-color: #c33 ! important;
+      width: 100%;
+      text-align: center;
+   }
+   
+   #vulns-alert #vulns a {
+    color: #F99 ! important;
+   }
+ </style>
+
+</head>
+
+<body id="top" class="module rdocstar">
+<div id='actionbar' >
+<div class='wrapper'>
+  <ul class='grids g0'></ul>
+</div>
+<span id='vulns-alert'></span>
+</div> <!-- end action bar -->
+ <div class='wrapper'>
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+          
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul id='file-metadata'>
+
+          
+          
+          
+          <li class='in-file'>test/unit/assertions.rb</li>      
+            
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-assert">#assert</a></li>
+          
+          <li><a href="#method-i-assert_block">#assert_block</a></li>
+          
+          <li><a href="#method-i-assert_equal">#assert_equal</a></li>
+          
+          <li><a href="#method-i-assert_no_match">#assert_no_match</a></li>
+          
+          <li><a href="#method-i-assert_not_equal">#assert_not_equal</a></li>
+          
+          <li><a href="#method-i-assert_not_nil">#assert_not_nil</a></li>
+          
+          <li><a href="#method-i-assert_not_same">#assert_not_same</a></li>
+          
+          <li><a href="#method-i-assert_not_send">#assert_not_send</a></li>
+          
+          <li><a href="#method-i-assert_nothing_raised">#assert_nothing_raised</a></li>
+          
+          <li><a href="#method-i-assert_nothing_thrown">#assert_nothing_thrown</a></li>
+          
+          <li><a href="#method-i-assert_raise">#assert_raise</a></li>
+          
+          <li><a href="#method-i-assert_raise_with_message">#assert_raise_with_message</a></li>
+          
+          <li><a href="#method-i-assert_respond_to">#assert_respond_to</a></li>
+          
+          <li><a href="#method-i-assert_send">#assert_send</a></li>
+          
+          <li><a href="#method-i-assert_throw">#assert_throw</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <!-- Included Modules -->
+      <div id="includes-section" class="section">
+        <h3 class="section-header">Included Modules</h3>
+        <ul class="link-list">
+        
+        
+          <li><span class="include">MiniTest::Assertions</span></li>
+        
+        
+        </ul>
+      </div>
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+          
+          
+          
+          <li><a href="../../Test.html">Test</a></li>
+        
+          
+          
+          <li><a href="../../Test/Unit.html">Test::Unit</a></li>
+        
+          
+          
+          <li><a href="../../Test/Unit/Assertions.html">Test::Unit::Assertions</a></li>
+        
+          
+          
+          <li><a href="../../Test/Unit/AutoRunner.html">Test::Unit::AutoRunner</a></li>
+        
+          
+          
+          <li><a href="../../Test/Unit/Runner.html">Test::Unit::Runner</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div> <!-- metadata -->
+  <div class='adzbox'  id="azk83167">
+    
+  </div> 
+  <div id="documentation">
+    <h1 class="module">Test::Unit::Assertions</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="assert-method" class="method-detail ">
+          <a name="method-i-assert"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert(test, [failure_message])</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests if <code>test</code> is true.</p>
+
+<p><code>msg</code> may be a String or a Proc. If <code>msg</code> is a
+String, it will be used as the failure message. Otherwise, the result of
+calling <code>msg</code> will be used as the message if the assertion
+fails.</p>
+
+<p>If no <code>msg</code> is given, a default message will be used.</p>
+
+<pre>assert(false, &quot;This was expected to be true&quot;)</pre>
+            
+
+            
+            <div class="method-source-code" id="assert-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">test</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">msgs</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">msgs</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-constant">String</span>, <span class="ruby-constant">Proc</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">msgs</span>.<span class="ruby-identifier">shift</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">bt</span> = <span class="ruby-identifier">caller</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">start_with?</span>(<span class="ruby-constant">MINI_DIR</span>) }
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-node">&quot;assertion message must be String or Proc, but #{msg.class} was given.&quot;</span>, <span class="ruby-identifier">bt</span>
+  <span class="ruby-keyword">end</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">msgs</span>.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-keyword">super</span>
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert-method -->
+      
+        <div id="assert_block-method" class="method-detail ">
+          <a name="method-i-assert_block"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_block( failure_message = nil )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests the result of the given block. If the block does not return true, the
+assertion will fail. The optional <code>failure_message</code> argument is
+the same as in <a href="Assertions.html#method-i-assert">#assert</a>.</p>
+
+<pre class="ruby"><span class="ruby-identifier">assert_block</span> <span class="ruby-keyword">do</span>
+  [<span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-value">3</span>].<span class="ruby-identifier">any?</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span> <span class="ruby-identifier">num</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span> }
+<span class="ruby-keyword">end</span>
+</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_block-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_block</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">msgs</span>)
+  <span class="ruby-identifier">assert</span> <span class="ruby-keyword">yield</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">msgs</span>
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_block-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_block-method -->
+      
+        <div id="assert_equal-method" class="method-detail ">
+          <a name="method-i-assert_equal"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_equal( expected, actual, failure_message = nil )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests if <code>expected</code> is equal to <code>actual</code>.</p>
+
+<p>An optional failure message may be provided as the final argument.</p>
+            
+
+            
+            <div class="method-source-code" id="assert_equal-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 207</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">exp</span>, <span class="ruby-identifier">act</span>, <span class="ruby-identifier">msg</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) {
+    <span class="ruby-identifier">exp_str</span> = <span class="ruby-identifier">mu_pp</span>(<span class="ruby-identifier">exp</span>)
+    <span class="ruby-identifier">act_str</span> = <span class="ruby-identifier">mu_pp</span>(<span class="ruby-identifier">act</span>)
+    <span class="ruby-identifier">exp_comment</span> = <span class="ruby-string">''</span>
+    <span class="ruby-identifier">act_comment</span> = <span class="ruby-string">''</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">exp_str</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">act_str</span>
+      <span class="ruby-keyword">if</span> (<span class="ruby-identifier">exp</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">act</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)) <span class="ruby-operator">||</span>
+         (<span class="ruby-identifier">exp</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Regexp</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">act</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Regexp</span>))
+        <span class="ruby-identifier">exp_comment</span> = <span class="ruby-node">&quot; (#{exp.encoding})&quot;</span>
+        <span class="ruby-identifier">act_comment</span> = <span class="ruby-node">&quot; (#{act.encoding})&quot;</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">exp</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Float</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">act</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Float</span>)
+        <span class="ruby-identifier">exp_str</span> = <span class="ruby-node">&quot;%\#.#{Float::DIG+2}g&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">exp</span>
+        <span class="ruby-identifier">act_str</span> = <span class="ruby-node">&quot;%\#.#{Float::DIG+2}g&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">act</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">exp</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Time</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">act</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Time</span>)
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">exp</span>.<span class="ruby-identifier">subsec</span> <span class="ruby-operator">*</span> <span class="ruby-value">1000_000_000</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">exp</span>.<span class="ruby-identifier">nsec</span>
+          <span class="ruby-identifier">exp_comment</span> = <span class="ruby-node">&quot; (#{exp.nsec}[ns])&quot;</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">exp_comment</span> = <span class="ruby-node">&quot; (subsec=#{exp.subsec})&quot;</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">act</span>.<span class="ruby-identifier">subsec</span> <span class="ruby-operator">*</span> <span class="ruby-value">1000_000_000</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">act</span>.<span class="ruby-identifier">nsec</span>
+          <span class="ruby-identifier">act_comment</span> = <span class="ruby-node">&quot; (#{act.nsec}[ns])&quot;</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">act_comment</span> = <span class="ruby-node">&quot; (subsec=#{act.subsec})&quot;</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">exp</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">act</span>.<span class="ruby-identifier">class</span>
+        <span class="ruby-comment"># a subclass of Range, for example.</span>
+        <span class="ruby-identifier">exp_comment</span> = <span class="ruby-node">&quot; (#{exp.class})&quot;</span>
+        <span class="ruby-identifier">act_comment</span> = <span class="ruby-node">&quot; (#{act.class})&quot;</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-operator">!</span><span class="ruby-constant">Encoding</span>.<span class="ruby-identifier">compatible?</span>(<span class="ruby-identifier">exp_str</span>, <span class="ruby-identifier">act_str</span>)
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">exp</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">act</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+        <span class="ruby-identifier">exp_str</span> = <span class="ruby-identifier">exp</span>.<span class="ruby-identifier">dump</span>
+        <span class="ruby-identifier">act_str</span> = <span class="ruby-identifier">act</span>.<span class="ruby-identifier">dump</span>
+        <span class="ruby-identifier">exp_comment</span> = <span class="ruby-node">&quot; (#{exp.encoding})&quot;</span>
+        <span class="ruby-identifier">act_comment</span> = <span class="ruby-node">&quot; (#{act.encoding})&quot;</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">exp_str</span> = <span class="ruby-identifier">exp_str</span>.<span class="ruby-identifier">dump</span>
+        <span class="ruby-identifier">act_str</span> = <span class="ruby-identifier">act_str</span>.<span class="ruby-identifier">dump</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-node">&quot;&lt;#{exp_str}&gt;#{exp_comment} expected but was\n&lt;#{act_str}&gt;#{act_comment}&quot;</span>
+  }
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">exp</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">act</span>, <span class="ruby-identifier">msg</span>)
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_equal-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_equal-method -->
+      
+        <div id="assert_no_match-method" class="method-detail ">
+          <a name="method-i-assert_no_match"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_no_match( regexp, string, failure_message = nil )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests if the given Regexp does not match a given String.</p>
+
+<p>An optional failure message may be provided as the final argument.</p>
+            
+
+            
+            <div class="method-source-code" id="assert_no_match-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 281</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_no_match</span>(<span class="ruby-identifier">regexp</span>, <span class="ruby-identifier">string</span>, <span class="ruby-identifier">msg</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">assert_instance_of</span>(<span class="ruby-constant">Regexp</span>, <span class="ruby-identifier">regexp</span>, <span class="ruby-string">&quot;The first argument to assert_no_match should be a Regexp.&quot;</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">_assertions</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) { <span class="ruby-node">&quot;&lt;#{mu_pp(regexp)}&gt; expected to not match\n&lt;#{mu_pp(string)}&gt;&quot;</span> }
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">regexp</span> <span class="ruby-operator">!~</span> <span class="ruby-identifier">string</span>, <span class="ruby-identifier">msg</span>)
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_no_match-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_no_match-method -->
+      
+        <div id="assert_not_equal-method" class="method-detail ">
+          <a name="method-i-assert_not_equal"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_not_equal( expected, actual, failure_message = nil )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests if <code>expected</code> is not equal to <code>actual</code>.</p>
+
+<p>An optional failure message may be provided as the final argument.</p>
+            
+
+            
+            <div class="method-source-code" id="assert_not_equal-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 270</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_not_equal</span>(<span class="ruby-identifier">exp</span>, <span class="ruby-identifier">act</span>, <span class="ruby-identifier">msg</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) { <span class="ruby-node">&quot;&lt;#{mu_pp(exp)}&gt; expected to be != to\n&lt;#{mu_pp(act)}&gt;&quot;</span> }
+  <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">exp</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">act</span>, <span class="ruby-identifier">msg</span>)
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_not_equal-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_not_equal-method -->
+      
+        <div id="assert_not_nil-method" class="method-detail ">
+          <a name="method-i-assert_not_nil"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_not_nil( expression, failure_message = nil )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests if <code>expression</code> is not nil.</p>
+
+<p>An optional failure message may be provided as the final argument.</p>
+            
+
+            
+            <div class="method-source-code" id="assert_not_nil-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 259</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_not_nil</span>(<span class="ruby-identifier">exp</span>, <span class="ruby-identifier">msg</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) { <span class="ruby-node">&quot;&lt;#{mu_pp(exp)}&gt; expected to not be nil&quot;</span> }
+  <span class="ruby-identifier">assert</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">exp</span>.<span class="ruby-identifier">nil?</span>, <span class="ruby-identifier">msg</span>)
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_not_nil-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_not_nil-method -->
+      
+        <div id="assert_not_same-method" class="method-detail ">
+          <a name="method-i-assert_not_same"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_not_same( expected, actual, failure_message = nil )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests if <code>expected</code> is not the same object as
+<code>actual</code>. This test uses Object#equal? to test equality.</p>
+
+<p>An optional failure message may be provided as the final argument.</p>
+
+<pre>assert_not_same(&quot;x&quot;, &quot;x&quot;) #Succeeds</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_not_same-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 297</span>
+      <span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_not_same</span>(<span class="ruby-identifier">expected</span>, <span class="ruby-identifier">actual</span>, <span class="ruby-identifier">message</span>=<span class="ruby-string">&quot;&quot;</span>)
+        <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) { <span class="ruby-identifier">build_message</span>(<span class="ruby-identifier">message</span>, <span class="ruby-string">&quot;&lt;?&gt;
+with id &lt;?&gt; expected to not be equal\\? to
+&lt;?&gt;
+with id &lt;?&gt;.
+&quot;</span>, <span class="ruby-identifier">expected</span>, <span class="ruby-identifier">expected</span>.<span class="ruby-identifier">__id__</span>, <span class="ruby-identifier">actual</span>, <span class="ruby-identifier">actual</span>.<span class="ruby-identifier">__id__</span>) }
+        <span class="ruby-identifier">assert</span>(<span class="ruby-operator">!</span><span class="ruby-identifier">actual</span>.<span class="ruby-identifier">equal?</span>(<span class="ruby-identifier">expected</span>), <span class="ruby-identifier">msg</span>)
+      <span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_not_same-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_not_same-method -->
+      
+        <div id="assert_not_send-method" class="method-detail ">
+          <a name="method-i-assert_not_send"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_not_send( +send_array+, failure_message = nil )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Passes if the method send doesn’t return a true value.</p>
+
+<p><code>send_array</code> is composed of:</p>
+<ul><li>
+<p>A receiver</p>
+</li><li>
+<p>A method</p>
+</li><li>
+<p>Arguments to the method</p>
+</li></ul>
+
+<p>Example:</p>
+
+<pre>assert_not_send([[1, 2], :member?, 1]) # -&gt; fail
+assert_not_send([[1, 2], :member?, 4]) # -&gt; pass</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_not_send-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 366</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_not_send</span> <span class="ruby-identifier">send_ary</span>, <span class="ruby-identifier">m</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">recv</span>, <span class="ruby-identifier">msg</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span> = <span class="ruby-identifier">send_ary</span>
+  <span class="ruby-identifier">m</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">m</span>) {
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">empty?</span>
+      <span class="ruby-identifier">argsstr</span> = <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-keyword">else</span>
+      (<span class="ruby-identifier">argsstr</span> = <span class="ruby-identifier">mu_pp</span>(<span class="ruby-identifier">args</span>)).<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp">/\A\[(.*)\]\z/m</span>, <span class="ruby-string">'(\1)'</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-node">&quot;Expected #{mu_pp(recv)}.#{msg}#{argsstr} to return false&quot;</span>
+  }
+  <span class="ruby-identifier">assert</span> <span class="ruby-operator">!</span><span class="ruby-identifier">recv</span>.<span class="ruby-identifier">__send__</span>(<span class="ruby-identifier">msg</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>), <span class="ruby-identifier">m</span>
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_not_send-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_not_send-method -->
+      
+        <div id="assert_nothing_raised-method" class="method-detail ">
+          <a name="method-i-assert_nothing_raised"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_nothing_raised( *args, &block )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>If any exceptions are given as arguments, the assertion will fail if one of
+those exceptions are raised. Otherwise, the test fails if any exceptions
+are raised.</p>
+
+<p>The final argument may be a failure message.</p>
+
+<pre>assert_nothing_raised RuntimeError do
+  raise Exception #Assertion passes, Exception is not a RuntimeError
+end
+
+assert_nothing_raised do
+  raise Exception #Assertion fails
+end</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_nothing_raised-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 130</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_nothing_raised</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">_assertions</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">Module</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">last</span>
+    <span class="ruby-identifier">msg</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">args</span>.<span class="ruby-identifier">pop</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">line</span> = <span class="ruby-keyword">__LINE__</span>; <span class="ruby-keyword">yield</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">MiniTest</span><span class="ruby-operator">::</span><span class="ruby-constant">Skip</span>
+    <span class="ruby-identifier">raise</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+    <span class="ruby-identifier">bt</span> = <span class="ruby-identifier">e</span>.<span class="ruby-identifier">backtrace</span>
+    <span class="ruby-identifier">as</span> = <span class="ruby-identifier">e</span>.<span class="ruby-identifier">instance_of?</span>(<span class="ruby-constant">MiniTest</span><span class="ruby-operator">::</span><span class="ruby-constant">Assertion</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">as</span>
+      <span class="ruby-identifier">ans</span> = <span class="ruby-node">/\A#{Regexp.quote(__FILE__)}:#{line}:in /o</span>
+      <span class="ruby-identifier">bt</span>.<span class="ruby-identifier">reject!</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">ln</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ans</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">ln</span>}
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> ((<span class="ruby-identifier">args</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">as</span>) <span class="ruby-operator">||</span>
+        <span class="ruby-identifier">args</span>.<span class="ruby-identifier">any?</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">instance_of?</span>(<span class="ruby-constant">Module</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-identifier">a</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">a</span> })
+      <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) { <span class="ruby-node">&quot;Exception raised:\n&lt;#{mu_pp(e)}&gt;&quot;</span> }
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">MiniTest</span><span class="ruby-operator">::</span><span class="ruby-constant">Assertion</span>, <span class="ruby-identifier">msg</span>.<span class="ruby-identifier">call</span>, <span class="ruby-identifier">bt</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">raise</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_nothing_raised-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_nothing_raised-method -->
+      
+        <div id="assert_nothing_thrown-method" class="method-detail ">
+          <a name="method-i-assert_nothing_thrown"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_nothing_thrown( failure_message = nil, &block )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Fails if the given block uses a call to Kernel#throw, and returns the
+result of the block otherwise.</p>
+
+<p>An optional failure message may be provided as the final argument.</p>
+
+<pre>assert_nothing_thrown &quot;Something was thrown!&quot; do
+  throw :problem?
+end</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_nothing_thrown-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 170</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_nothing_thrown</span>(<span class="ruby-identifier">msg</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">ret</span> = <span class="ruby-keyword">yield</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">ArgumentError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">error</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-identifier">error</span> <span class="ruby-keyword">if</span> <span class="ruby-regexp">/\Auncaught throw (.+)\z/m</span> <span class="ruby-operator">!~</span> <span class="ruby-identifier">error</span>.<span class="ruby-identifier">message</span>
+    <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) { <span class="ruby-node">&quot;&lt;#{$1}&gt; was thrown when nothing was expected&quot;</span> }
+    <span class="ruby-identifier">flunk</span>(<span class="ruby-identifier">msg</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">assert</span>(<span class="ruby-keyword">true</span>, <span class="ruby-string">&quot;Expected nothing to be thrown&quot;</span>)
+  <span class="ruby-identifier">ret</span>
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_nothing_thrown-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_nothing_thrown-method -->
+      
+        <div id="assert_raise-method" class="method-detail ">
+          <a name="method-i-assert_raise"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_raise( *args, &block )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests if the given block raises an exception. Acceptable exception types
+may be given as optional arguments. If the last argument is a String, it
+will be used as the error message.</p>
+
+<pre>assert_raise do #Fails, no Exceptions are raised
+end
+
+assert_raise NameError do
+  puts x  #Raises NameError, so assertion succeeds
+end</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_raise-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 66</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_raise</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">assert_raises</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">b</span>)
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_raise-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_raise-method -->
+      
+        <div id="assert_raise_with_message-method" class="method-detail ">
+          <a name="method-i-assert_raise_with_message"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_raise_with_message(exception, expected, msg = nil, &block)</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests if the given block raises an exception with the expected message.</p>
+
+<pre>assert_raise_with_message(RuntimeError, &quot;foo&quot;) do
+  nil #Fails, no Exceptions are raised
+end
+
+assert_raise_with_message(RuntimeError, &quot;foo&quot;) do
+  raise ArgumentError, &quot;foo&quot; #Fails, different Exception is raised
+end
+
+assert_raise_with_message(RuntimeError, &quot;foo&quot;) do
+  raise &quot;bar&quot; #Fails, RuntimeError is raised but the message differs
+end
+
+assert_raise_with_message(RuntimeError, &quot;foo&quot;) do
+  raise &quot;foo&quot; #Raises RuntimeError with the message, so assertion succeeds
+end</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_raise_with_message-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 91</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_raise_with_message</span>(<span class="ruby-identifier">exception</span>, <span class="ruby-identifier">expected</span>, <span class="ruby-identifier">msg</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">expected</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-constant">String</span>
+    <span class="ruby-identifier">assert</span> = <span class="ruby-value">:assert_equal</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-constant">Regexp</span>
+    <span class="ruby-identifier">assert</span> = <span class="ruby-value">:assert_match</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">TypeError</span>, <span class="ruby-node">&quot;Expected #{expected.inspect} to be a kind of String or Regexp, not #{expected.class}&quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">ex</span> = <span class="ruby-identifier">assert_raise</span>(<span class="ruby-identifier">exception</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">msg</span>) {<span class="ruby-keyword">yield</span>}
+  <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>, <span class="ruby-string">&quot;&quot;</span>) {<span class="ruby-node">&quot;Expected Exception(#{exception}) was raised, but the message doesn't match&quot;</span>}
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">assert</span> <span class="ruby-operator">==</span> <span class="ruby-value">:assert_equal</span>
+    <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">expected</span>, <span class="ruby-identifier">ex</span>.<span class="ruby-identifier">message</span>, <span class="ruby-identifier">msg</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) { <span class="ruby-node">&quot;Expected #{mu_pp expected} to match #{mu_pp ex.message}&quot;</span> }
+    <span class="ruby-identifier">assert</span> <span class="ruby-identifier">expected</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">ex</span>.<span class="ruby-identifier">message</span>, <span class="ruby-identifier">msg</span>
+    <span class="ruby-identifier">block</span>.<span class="ruby-identifier">binding</span>.<span class="ruby-identifier">eval</span>(<span class="ruby-string">&quot;proc{|_|$~=_}&quot;</span>).<span class="ruby-identifier">call</span>(<span class="ruby-identifier">$~</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">ex</span>
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_raise_with_message-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_raise_with_message-method -->
+      
+        <div id="assert_respond_to-method" class="method-detail ">
+          <a name="method-i-assert_respond_to"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_respond_to( object, method, failure_message = nil )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Tests if the given Object responds to <code>method</code>.</p>
+
+<p>An optional failure message may be provided as the final argument.</p>
+
+<pre>assert_respond_to(&quot;hello&quot;, :reverse)  #Succeeds
+assert_respond_to(&quot;hello&quot;, :does_not_exist)  #Fails</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_respond_to-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 316</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_respond_to</span> <span class="ruby-identifier">obj</span>, (<span class="ruby-identifier">meth</span>, <span class="ruby-identifier">priv</span>), <span class="ruby-identifier">msg</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">priv</span>
+    <span class="ruby-identifier">msg</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) {
+      <span class="ruby-node">&quot;Expected #{mu_pp(obj)} (#{obj.class}) to respond to ##{meth}#{&quot; privately&quot; if priv}&quot;</span>
+    }
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">assert</span> <span class="ruby-identifier">obj</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-identifier">meth</span>, <span class="ruby-identifier">priv</span>), <span class="ruby-identifier">msg</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-comment">#get rid of overcounting</span>
+  <span class="ruby-keyword">super</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">caller</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">rindex</span>(<span class="ruby-constant">MINI_DIR</span>, <span class="ruby-value">0</span>) <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">obj</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-identifier">meth</span>)
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_respond_to-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_respond_to-method -->
+      
+        <div id="assert_send-method" class="method-detail ">
+          <a name="method-i-assert_send"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_send( +send_array+, failure_message = nil )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Passes if the method send returns a true value.</p>
+
+<p><code>send_array</code> is composed of:</p>
+<ul><li>
+<p>A receiver</p>
+</li><li>
+<p>A method</p>
+</li><li>
+<p>Arguments to the method</p>
+</li></ul>
+
+<p>Example:</p>
+
+<pre>assert_send([&quot;Hello world&quot;, :include?, &quot;Hello&quot;])    # -&gt; pass
+assert_send([&quot;Hello world&quot;, :include?, &quot;Goodbye&quot;])  # -&gt; fail</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_send-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 340</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_send</span> <span class="ruby-identifier">send_ary</span>, <span class="ruby-identifier">m</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">recv</span>, <span class="ruby-identifier">msg</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span> = <span class="ruby-identifier">send_ary</span>
+  <span class="ruby-identifier">m</span> = <span class="ruby-identifier">message</span>(<span class="ruby-identifier">m</span>) {
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">empty?</span>
+      <span class="ruby-identifier">argsstr</span> = <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-keyword">else</span>
+      (<span class="ruby-identifier">argsstr</span> = <span class="ruby-identifier">mu_pp</span>(<span class="ruby-identifier">args</span>)).<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp">/\A\[(.*)\]\z/m</span>, <span class="ruby-string">'(\1)'</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-node">&quot;Expected #{mu_pp(recv)}.#{msg}#{argsstr} to return true&quot;</span>
+  }
+  <span class="ruby-identifier">assert</span> <span class="ruby-identifier">recv</span>.<span class="ruby-identifier">__send__</span>(<span class="ruby-identifier">msg</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>), <span class="ruby-identifier">m</span>
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_send-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_send-method -->
+      
+        <div id="assert_throw-method" class="method-detail ">
+          <a name="method-i-assert_throw"></a>
+
+          
+          
+          <div class="method-heading">
+            <span class="method-callseq">assert_throw( tag, failure_message = nil, &block )</span>
+            
+            <span class="method-click-advice">click to toggle source</span>
+            
+          </div>
+          
+          
+          <div>
+  
+            
+            <p>Fails unless the given block throws <code>tag</code>, returns the caught
+value otherwise.</p>
+
+<p>An optional failure message may be provided as the final argument.</p>
+
+<pre>tag = Object.new
+assert_throw(tag, &quot;#{tag} was not thrown!&quot;) do
+  throw tag
+end</pre>
+            
+
+            
+            <div class="method-source-code" id="assert_throw-source">
+              <pre> <!-- method.markup_code 290 -->
+               <span class="ruby-comment"># File test/unit/assertions.rb, line 194</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_throw</span>(<span class="ruby-identifier">tag</span>, <span class="ruby-identifier">msg</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">catch</span>(<span class="ruby-identifier">tag</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-keyword">yield</span>(<span class="ruby-identifier">tag</span>)
+    <span class="ruby-identifier">assert</span>(<span class="ruby-keyword">false</span>, <span class="ruby-identifier">message</span>(<span class="ruby-identifier">msg</span>) {<span class="ruby-node">&quot;Expected #{mu_pp(tag)} to have been thrown&quot;</span>})
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+            </pre> 
+            </div><!-- assert_throw-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- assert_throw-method -->
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+  <div id='tx_Assertions_versioned' class='associated_wrapper'></div><script type='text/javascript'>$("#tx_Assertions_versioned").load("/associated/2.1.2/Assertions.html");</script> <div id='tx_Assertions' class='associated_wrapper'></div><script type='text/javascript'>$("#tx_Assertions").load("/associated/Assertions.html");</script> 
+      
+  </div><!-- documentation -->
+  <div id='dynamic'>
+  </div>
+      
+<div class='grids wrapper' id="footer">
+  <p><small>This page was generated for Ruby 2.1.2</small></p> 
+  
+   <p><a href="http://www.ruby-doc.org">Ruby-doc.org</a> is provided by <a href="http://www.jamesbritt.com">James Britt</a> and <a href="http://www.neurogami.com">Neurogami</a>. <a href="http://www.neurogami.com">Maximum R+D</a>.</p>
+ 
+    <p><small>Generated with Ruby-doc Rdoc Generator 0.28.0</small>.</p>
+  </div>
+</div>
+  
+ <script type='text/javascript'>
+$(document).ready(function() {
+      $.ajaxSetup({ cache: false });
+      $("#vulns-alert").load("/associated/vulns.html");
+    });
+
+    </script>
+
+
+ 
+    <script type='text/javascript'>
+
+  function loadPlus(plusdocs){
+    var img_h = $("img.carbonad-image").css('height');
+    //if(img_h != undefined) { //---
+      $(plusdocs).find("div[class='associated_wrapper']").each (function() {
+          $("#" + this.id).append($(plusdocs).find("#" + this.id ));
+          });
+    //} // ---
+  } // end loadPlusdocs
+
+
+$(document).ready(function() {
+    $.ajaxSetup({ cache: false });
+      $.get('/associated/2.1.2/plus_Assertions.html', 
+      function(plusdocs) {
+      setTimeout(function() {
+        loadPlus(plusdocs);
+        }, 2000);
+      }
+      );
+    });
+</script>
+		
+</body>
+</html>
+
+

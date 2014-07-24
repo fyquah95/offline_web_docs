@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <!-- classpage -- >
+    <!-- RD version: 0.28.0  -->
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta name='description' content='  Module : MiniTest  -   Ruby 2.1.2 ' />
+  <meta content="2014-07-15 11:20:48 -0700" http-equiv="change-date" />
+  <!-- rel_prefix  = ''  ENV['RDOC_FOR_WEBSITE']   = false-->
+    
+    
+    
+  <!-- rel_prefix = '.'   asset_rel_prefix = ''  --> 
+  <title>Module: MiniTest (Ruby 2.1.2) </title>
+  <!-- link rel="stylesheet" href=".css/obf.css"  -->
+  <link rel="stylesheet" href="css/inuit.css" >
+  <link rel="stylesheet" href="css/grid.inuit.css" >
+  <link rel="stylesheet" href="css/2011.css" type="text/css" >
+  <link rel="stylesheet" href="css/rdoc.css" type="text/css" >
+
+  <script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/rubydoc.js" type="text/javascript" charset="utf-8"></script> 
+
+ 
+<script src="/js/highlight.min.js"></script>
+<script> 
+  hljs.tabReplace = '  ';
+  hljs.initHighlightingOnLoad();
+  </script> 
+
+  <style type='text/css'>
+
+    #vulns-alert #vulns{
+      background-color: #c33 ! important;
+      width: 100%;
+      text-align: center;
+   }
+   
+   #vulns-alert #vulns a {
+    color: #F99 ! important;
+   }
+ </style>
+
+</head>
+
+<body id="top" class="module rdocstar">
+<div id='actionbar' >
+<div class='wrapper'>
+  <ul class='grids g0'></ul>
+</div>
+<span id='vulns-alert'></span>
+</div> <!-- end action bar -->
+ <div class='wrapper'>
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+          
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul id='file-metadata'>
+
+          
+          
+          
+          <li class='in-file'>minitest/autorun.rb</li>      
+            
+          
+          <li class='in-file'>minitest/benchmark.rb</li>      
+            
+          
+          <li class='in-file'>minitest/mock.rb</li>      
+            
+          
+          <li class='in-file'>minitest/parallel_each.rb</li>      
+            
+          
+          <li class='in-file'>minitest/pride.rb</li>      
+            
+          
+          <li class='in-file'>minitest/spec.rb</li>      
+            
+          
+          <li class='in-file'>minitest/unit.rb</li>      
+            
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+
+      
+
+      
+      <!-- Namespace Contents -->
+      <div id="namespace-list-section" class="section">
+        <h3 class="section-header">Namespace</h3>
+        <ul class="link-list">
+          
+          <li><span class="type">MODULE</span> <a href="MiniTest/Assertions.html">MiniTest::Assertions</a></li>
+          
+          <li><span class="type">MODULE</span> <a href="MiniTest/Expectations.html">MiniTest::Expectations</a></li>
+          
+          <li><span class="type">CLASS</span> <a href="MiniTest/Assertion.html">MiniTest::Assertion</a></li>
+          
+          <li><span class="type">CLASS</span> <a href="MiniTest/Mock.html">MiniTest::Mock</a></li>
+          
+          <li><span class="type">CLASS</span> <a href="MiniTest/Skip.html">MiniTest::Skip</a></li>
+          
+          <li><span class="type">CLASS</span> <a href="MiniTest/Spec.html">MiniTest::Spec</a></li>
+          
+          <li><span class="type">CLASS</span> <a href="MiniTest/Unit.html">MiniTest::Unit</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+          
+          
+          
+          <li><a href="./MiniTest.html">MiniTest</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Assertion.html">MiniTest::Assertion</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Assertions.html">MiniTest::Assertions</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Expectations.html">MiniTest::Expectations</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Mock.html">MiniTest::Mock</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Skip.html">MiniTest::Skip</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Spec/DSL.html">MiniTest::Spec::DSL</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Unit.html">MiniTest::Unit</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Unit/Guard.html">MiniTest::Unit::Guard</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Unit/LifecycleHooks.html">MiniTest::Unit::LifecycleHooks</a></li>
+        
+          
+          
+          <li><a href="./MiniTest/Unit/TestCase.html">MiniTest::Unit::TestCase</a></li>
+        
+          
+          
+          <li><a href="./Object.html">Object</a></li>
+        
+          
+          
+          <li><a href="./ParallelEach.html">ParallelEach</a></li>
+        
+          
+          
+          <li><a href="./PrideIO.html">PrideIO</a></li>
+        
+          
+          
+          <li><a href="./PrideLOL.html">PrideLOL</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div> <!-- metadata -->
+  <div class='adzbox'  id="azk83167">
+    
+  </div> 
+  <div id="documentation">
+    <h1 class="module">MiniTest</h1>
+
+    <div id="description" class="description">
+      
+<p>Minimal (mostly drop-in) replacement for test-unit.</p>
+
+<h1 id="module-MiniTest-label-minitest%2F%7Bunit%2Cspec%2Cmock%2Cbenchmark%7D">minitest/{unit,spec,mock,benchmark}<span><a href="#module-MiniTest-label-minitest%2F%7Bunit%2Cspec%2Cmock%2Cbenchmark%7D">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+<dl class="rdoc-list note-list"><dt>home 
+<dd>
+<p><a
+href="https://github.com/seattlerb/minitest">github.com/seattlerb/minitest</a></p>
+</dd><dt>rdoc 
+<dd>
+<p><a
+href="http://docs.seattlerb.org/minitest">docs.seattlerb.org/minitest</a></p>
+</dd><dt>vim  
+<dd>
+<p><a
+href="https://github.com/sunaku/vim-ruby-minitest">github.com/sunaku/vim-ruby-minitest</a></p>
+</dd></dl>
+
+<h2 id="module-MiniTest-label-DESCRIPTION%3A">DESCRIPTION:<span><a href="#module-MiniTest-label-DESCRIPTION%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>minitest provides a complete suite of testing facilities supporting TDD,
+BDD, mocking, and benchmarking.</p>
+
+<pre class="ruby"><span class="ruby-string">&quot;I had a class with Jim Weirich on testing last week and we were
+ allowed to choose our testing frameworks. Kirk Haines and I were
+ paired up and we cracked open the code for a few test
+ frameworks...
+
+ I MUST say that minitest is *very* readable / understandable
+ compared to the 'other two' options we looked at. Nicely done and
+ thank you for helping us keep our mental sanity.&quot;</span>
+
+<span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Wayne</span> <span class="ruby-constant">E</span>. <span class="ruby-constant">Seguin</span>
+</pre>
+
+<p>minitest/unit is a small and incredibly fast unit testing framework. It
+provides a rich set of assertions to make your tests clean and readable.</p>
+
+<p>minitest/spec is a functionally complete spec engine. It hooks onto
+minitest/unit and seamlessly bridges test assertions over to spec
+expectations.</p>
+
+<p>minitest/benchmark is an awesome way to assert the performance of your
+algorithms in a repeatable manner. Now you can assert that your newb
+co-worker doesn’t replace your linear algorithm with an exponential one!</p>
+
+<p>minitest/mock by Steven Baker, is a beautifully tiny mock (and stub) object
+framework.</p>
+
+<p>minitest/pride shows pride in testing and adds coloring to your test
+output. I guess it is an example of how to write IO pipes too. :P</p>
+
+<p>minitest/unit is meant to have a clean implementation for language
+implementors that need a minimal set of methods to bootstrap a working test
+suite. For example, there is no magic involved for test-case discovery.</p>
+
+<pre>&quot;Again, I can't praise enough the idea of a testing/specing
+ framework that I can actually read in full in one sitting!&quot;
+
+-- Piotr Szotkowski</pre>
+
+<p>Comparing to rspec:</p>
+
+<pre>rspec is a testing DSL. minitest is ruby.
+
+-- Adam Hawkins, &quot;Bow Before MiniTest&quot;</pre>
+
+<p>minitest doesn’t reinvent anything that ruby already provides, like:
+classes, modules, inheritance, methods. This means you only have to learn
+ruby to use minitest and all of your regular OO practices like
+extract-method refactorings still apply.</p>
+
+<h2 id="module-MiniTest-label-FEATURES%2FPROBLEMS%3A">FEATURES/PROBLEMS:<span><a href="#module-MiniTest-label-FEATURES%2FPROBLEMS%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>minitest/autorun - the easy and explicit way to run all your tests.</p>
+</li><li>
+<p>minitest/unit - a very fast, simple, and clean test system.</p>
+</li><li>
+<p>minitest/spec - a very fast, simple, and clean spec system.</p>
+</li><li>
+<p>minitest/mock - a simple and clean mock/stub system.</p>
+</li><li>
+<p>minitest/benchmark - an awesome way to assert your algorithm’s performance.</p>
+</li><li>
+<p>minitest/pride - show your pride in testing!</p>
+</li><li>
+<p>Incredibly small and fast runner, but no bells and whistles.</p>
+</li></ul>
+
+<h2 id="module-MiniTest-label-RATIONALE%3A">RATIONALE:<span><a href="#module-MiniTest-label-RATIONALE%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>See design_rationale.rb to see how specs and tests work in minitest.</p>
+
+<h2 id="module-MiniTest-label-SYNOPSIS%3A">SYNOPSIS:<span><a href="#module-MiniTest-label-SYNOPSIS%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Given that you’d like to test the following class:</p>
+
+<pre class="ruby"><span class="ruby-keyword">class</span> <span class="ruby-constant">Meme</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">i_can_has_cheezburger?</span>
+    <span class="ruby-string">&quot;OHAI!&quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">will_it_blend?</span>
+    <span class="ruby-string">&quot;YES!&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<h3 id="module-MiniTest-label-Unit+tests"><a href="MiniTest/Unit.html">Unit</a> tests<span><a href="#module-MiniTest-label-Unit+tests">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">'minitest/autorun'</span>
+
+<span class="ruby-keyword">class</span> <span class="ruby-constant">TestMeme</span> <span class="ruby-operator">&lt;</span> <span class="ruby-constant">MiniTest</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span><span class="ruby-operator">::</span><span class="ruby-constant">TestCase</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">setup</span>
+    <span class="ruby-ivar">@meme</span> = <span class="ruby-constant">Meme</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_that_kitty_can_eat</span>
+    <span class="ruby-identifier">assert_equal</span> <span class="ruby-string">&quot;OHAI!&quot;</span>, <span class="ruby-ivar">@meme</span>.<span class="ruby-identifier">i_can_has_cheezburger?</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_that_it_will_not_blend</span>
+    <span class="ruby-identifier">refute_match</span> <span class="ruby-regexp">/^no/i</span>, <span class="ruby-ivar">@meme</span>.<span class="ruby-identifier">will_it_blend?</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_that_will_be_skipped</span>
+    <span class="ruby-identifier">skip</span> <span class="ruby-string">&quot;test this later&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<h3 id="module-MiniTest-label-Specs">Specs<span><a href="#module-MiniTest-label-Specs">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">'minitest/autorun'</span>
+
+<span class="ruby-identifier">describe</span> <span class="ruby-constant">Meme</span> <span class="ruby-keyword">do</span>
+  <span class="ruby-identifier">before</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-ivar">@meme</span> = <span class="ruby-constant">Meme</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">describe</span> <span class="ruby-string">&quot;when asked about cheeseburgers&quot;</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">it</span> <span class="ruby-string">&quot;must respond positively&quot;</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-ivar">@meme</span>.<span class="ruby-identifier">i_can_has_cheezburger?</span>.<span class="ruby-identifier">must_equal</span> <span class="ruby-string">&quot;OHAI!&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">describe</span> <span class="ruby-string">&quot;when asked about blending possibilities&quot;</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">it</span> <span class="ruby-string">&quot;won't say no&quot;</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-ivar">@meme</span>.<span class="ruby-identifier">will_it_blend?</span>.<span class="ruby-identifier">wont_match</span> <span class="ruby-regexp">/^no/i</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<p>For matchers support check out:</p>
+
+<p><a
+href="https://github.com/zenspider/minitest-matchers">github.com/zenspider/minitest-matchers</a></p>
+
+<h3 id="module-MiniTest-label-Benchmarks">Benchmarks<span><a href="#module-MiniTest-label-Benchmarks">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>Add benchmarks to your regular unit tests. If the unit tests fail, the
+benchmarks won’t run.</p>
+
+<pre class="ruby"><span class="ruby-comment"># optionally run benchmarks, good for CI-only work!</span>
+<span class="ruby-identifier">require</span> <span class="ruby-string">'minitest/benchmark'</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">ENV</span>[<span class="ruby-string">&quot;BENCH&quot;</span>]
+
+<span class="ruby-keyword">class</span> <span class="ruby-constant">TestMeme</span> <span class="ruby-operator">&lt;</span> <span class="ruby-constant">MiniTest</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span><span class="ruby-operator">::</span><span class="ruby-constant">TestCase</span>
+  <span class="ruby-comment"># Override self.bench_range or default range is [1, 10, 100, 1_000, 10_000]</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">bench_my_algorithm</span>
+    <span class="ruby-identifier">assert_performance_linear</span> <span class="ruby-value">0.9999</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">n</span><span class="ruby-operator">|</span> <span class="ruby-comment"># n is a range value</span>
+      <span class="ruby-ivar">@obj</span>.<span class="ruby-identifier">my_algorithm</span>(<span class="ruby-identifier">n</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<p>Or add them to your specs. If you make benchmarks optional, you’ll need to
+wrap your benchmarks in a conditional since the methods won’t be defined.</p>
+
+<pre class="ruby"><span class="ruby-identifier">describe</span> <span class="ruby-constant">Meme</span> <span class="ruby-keyword">do</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">ENV</span>[<span class="ruby-string">&quot;BENCH&quot;</span>] <span class="ruby-keyword">then</span>
+    <span class="ruby-identifier">bench_performance_linear</span> <span class="ruby-string">&quot;my_algorithm&quot;</span>, <span class="ruby-value">0.9999</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">n</span><span class="ruby-operator">|</span>
+      <span class="ruby-value">100</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-ivar">@obj</span>.<span class="ruby-identifier">my_algorithm</span>(<span class="ruby-identifier">n</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<p>outputs something like:</p>
+
+<pre># Running benchmarks:
+
+TestBlah    100     1000    10000
+bench_my_algorithm   0.006167        0.079279        0.786993
+bench_other_algorithm        0.061679        0.792797        7.869932</pre>
+
+<p>Output is tab-delimited to make it easy to paste into a spreadsheet.</p>
+
+<h3 id="module-MiniTest-label-Mocks">Mocks<span><a href="#module-MiniTest-label-Mocks">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<pre class="ruby"><span class="ruby-keyword">class</span> <span class="ruby-constant">MemeAsker</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">meme</span>)
+    <span class="ruby-ivar">@meme</span> = <span class="ruby-identifier">meme</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">ask</span>(<span class="ruby-identifier">question</span>)
+    <span class="ruby-identifier">method</span> = <span class="ruby-identifier">question</span>.<span class="ruby-identifier">tr</span>(<span class="ruby-string">&quot; &quot;</span>,<span class="ruby-string">&quot;_&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;?&quot;</span>
+    <span class="ruby-ivar">@meme</span>.<span class="ruby-identifier">__send__</span>(<span class="ruby-identifier">method</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">require</span> <span class="ruby-string">'minitest/autorun'</span>
+
+<span class="ruby-identifier">describe</span> <span class="ruby-constant">MemeAsker</span> <span class="ruby-keyword">do</span>
+  <span class="ruby-identifier">before</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-ivar">@meme</span> = <span class="ruby-constant">MiniTest</span><span class="ruby-operator">::</span><span class="ruby-constant">Mock</span>.<span class="ruby-identifier">new</span>
+    <span class="ruby-ivar">@meme_asker</span> = <span class="ruby-constant">MemeAsker</span>.<span class="ruby-identifier">new</span> <span class="ruby-ivar">@meme</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">describe</span> <span class="ruby-node">&quot;#ask&quot;</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">describe</span> <span class="ruby-string">&quot;when passed an unpunctuated question&quot;</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">it</span> <span class="ruby-string">&quot;should invoke the appropriate predicate method on the meme&quot;</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-ivar">@meme</span>.<span class="ruby-identifier">expect</span> :<span class="ruby-identifier">will_it_blend?</span>, :<span class="ruby-identifier">return_value</span>
+        <span class="ruby-ivar">@meme_asker</span>.<span class="ruby-identifier">ask</span> <span class="ruby-string">&quot;will it blend&quot;</span>
+        <span class="ruby-ivar">@meme</span>.<span class="ruby-identifier">verify</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<h3 id="module-MiniTest-label-Stubs">Stubs<span><a href="#module-MiniTest-label-Stubs">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<pre class="ruby"><span class="ruby-keyword">def</span> <span class="ruby-identifier">test_stale_eh</span>
+  <span class="ruby-identifier">obj_under_test</span> = <span class="ruby-constant">Something</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">refute</span> <span class="ruby-identifier">obj_under_test</span>.<span class="ruby-identifier">stale?</span>
+
+  <span class="ruby-constant">Time</span>.<span class="ruby-identifier">stub</span> :<span class="ruby-identifier">now</span>, <span class="ruby-constant">Time</span>.<span class="ruby-identifier">at</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword">do</span>   <span class="ruby-comment"># stub goes away once the block is done</span>
+    <span class="ruby-identifier">assert</span> <span class="ruby-identifier">obj_under_test</span>.<span class="ruby-identifier">stale?</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<p>A note on stubbing: In order to stub a method, the method must actually
+exist prior to stubbing. Use a singleton method to create a new
+non-existing method:</p>
+
+<pre class="ruby"><span class="ruby-keyword">def</span> <span class="ruby-identifier">obj_under_test</span>.<span class="ruby-identifier">fake_method</span>
+  <span class="ruby-operator">...</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<h3 id="module-MiniTest-label-Customizable+Test+Runner+Types%3A">Customizable Test Runner Types:<span><a href="#module-MiniTest-label-Customizable+Test+Runner+Types%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>MiniTest::Unit.runner=(runner) provides an easy way of creating custom test
+runners for specialized needs. Justin Weiss provides the following
+real-world example to create an alternative to regular fixture loading:</p>
+
+<pre class="ruby"><span class="ruby-keyword">class</span> <span class="ruby-constant">MiniTestWithHooks</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span> <span class="ruby-operator">&lt;</span> <span class="ruby-constant">MiniTest</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">before_suites</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">after_suites</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">_run_suites</span>(<span class="ruby-identifier">suites</span>, <span class="ruby-identifier">type</span>)
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-identifier">before_suites</span>
+      <span class="ruby-keyword">super</span>(<span class="ruby-identifier">suites</span>, <span class="ruby-identifier">type</span>)
+    <span class="ruby-keyword">ensure</span>
+      <span class="ruby-identifier">after_suites</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">_run_suite</span>(<span class="ruby-identifier">suite</span>, <span class="ruby-identifier">type</span>)
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-identifier">suite</span>.<span class="ruby-identifier">before_suite</span>
+      <span class="ruby-keyword">super</span>(<span class="ruby-identifier">suite</span>, <span class="ruby-identifier">type</span>)
+    <span class="ruby-keyword">ensure</span>
+      <span class="ruby-identifier">suite</span>.<span class="ruby-identifier">after_suite</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">module</span> <span class="ruby-constant">MiniTestWithTransactions</span>
+  <span class="ruby-keyword">class</span> <span class="ruby-constant">Unit</span> <span class="ruby-operator">&lt;</span> <span class="ruby-constant">MiniTestWithHooks</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>
+    <span class="ruby-identifier">include</span> <span class="ruby-constant">TestSetupHelper</span>
+
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">before_suites</span>
+      <span class="ruby-keyword">super</span>
+      <span class="ruby-identifier">setup_nested_transactions</span>
+      <span class="ruby-comment"># load any data we want available for all tests</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">after_suites</span>
+      <span class="ruby-identifier">teardown_nested_transactions</span>
+      <span class="ruby-keyword">super</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-constant">MiniTest</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>.<span class="ruby-identifier">runner</span> = <span class="ruby-constant">MiniTestWithTransactions</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>.<span class="ruby-identifier">new</span>
+</pre>
+
+<h2 id="module-MiniTest-label-FAQ">FAQ<span><a href="#module-MiniTest-label-FAQ">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<h3 id="module-MiniTest-label-How+to+test+SimpleDelegates%3F">How to test SimpleDelegates?<span><a href="#module-MiniTest-label-How+to+test+SimpleDelegates%3F">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<p>The following implementation and test:</p>
+
+<pre class="ruby"><span class="ruby-keyword">class</span> <span class="ruby-constant">Worker</span> <span class="ruby-operator">&lt;</span> <span class="ruby-constant">SimpleDelegator</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">work</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+
+<span class="ruby-identifier">describe</span> <span class="ruby-constant">Worker</span> <span class="ruby-keyword">do</span>
+  <span class="ruby-identifier">before</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-ivar">@worker</span> = <span class="ruby-constant">Worker</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">Object</span>.<span class="ruby-identifier">new</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">it</span> <span class="ruby-string">&quot;must respond to work&quot;</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-ivar">@worker</span>.<span class="ruby-identifier">must_respond_to</span> :<span class="ruby-identifier">work</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<p>outputs a failure:</p>
+
+<pre>  1) Failure:
+Worker#test_0001_must respond to work [bug11.rb:16]:
+Expected #&lt;Object:0x007f9e7184f0a0&gt; (Object) to respond to #work.</pre>
+
+<p>Worker is a SimpleDelegate which in 1.9+ is a subclass of BasicObject. <a
+href="MiniTest/Expectations.html">Expectations</a> are put on <a
+href="Object.html">Object</a> (one level down) so the Worker
+(SimpleDelegate) hits `method_missing` and delegates down to the
+`Object.new` instance. That object doesn’t respond to work so the test
+fails.</p>
+
+<p>You can bypass `SimpleDelegate#method_missing` by extending the worker with
+`MiniTest::Expectations`. You can either do that in your setup at the
+instance level, like:</p>
+
+<pre>before do
+  @worker = Worker.new(Object.new)
+  @worker.extend MiniTest::Expectations
+end</pre>
+
+<p>or you can extend the Worker class (within the test file!), like:</p>
+
+<pre class="ruby"><span class="ruby-keyword">class</span> <span class="ruby-constant">Worker</span>
+  <span class="ruby-identifier">include</span> <span class="ruby-operator">::</span><span class="ruby-constant">MiniTest</span><span class="ruby-operator">::</span><span class="ruby-constant">Expectations</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<h2 id="module-MiniTest-label-Known+Extensions%3A">Known Extensions:<span><a href="#module-MiniTest-label-Known+Extensions%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<dl class="rdoc-list note-list"><dt>capybara_minitest_spec      
+<dd>
+<p>Bridge between Capybara RSpec matchers and MiniTest::Spec expectations
+(e.g. page.must_have_content(‘Title’)).</p>
+</dd><dt>minispec-metadata           
+<dd>
+<p>Metadata for describe/it blocks (e.g. `it ‘requires JS driver’, js: true
+do`)</p>
+</dd><dt>minitest-ansi               
+<dd>
+<p>Colorize minitest output with ANSI colors.</p>
+</dd><dt>minitest-around             
+<dd>
+<p>Around block for minitest. An alternative to setup/teardown dance.</p>
+</dd><dt>minitest-capistrano         
+<dd>
+<p><a href="MiniTest/Assertions.html">Assertions</a> and expectations for
+testing Capistrano recipes</p>
+</dd><dt>minitest-capybara           
+<dd>
+<p>Capybara matchers support for minitest unit and spec</p>
+</dd><dt>minitest-chef-handler       
+<dd>
+<p>Run Minitest suites as Chef report handlers</p>
+</dd><dt>minitest-ci                 
+<dd>
+<p>CI reporter plugin for <a href="MiniTest.html">MiniTest</a>.</p>
+</dd><dt>minitest-colorize           
+<dd>
+<p>Colorize <a href="MiniTest.html">MiniTest</a> output and show failing tests
+instantly.</p>
+</dd><dt>minitest-context            
+<dd>
+<p>Defines contexts for code reuse in <a href="MiniTest.html">MiniTest</a>
+specs that share common expectations.</p>
+</dd><dt>minitest-debugger           
+<dd>
+<p>Wraps assert so failed assertions drop into the ruby debugger.</p>
+</dd><dt>minitest-display            
+<dd>
+<p>Patches <a href="MiniTest.html">MiniTest</a> to allow for an easily
+configurable output.</p>
+</dd><dt>minitest-emoji              
+<dd>
+<p>Print out emoji for your test passes, fails, and skips.</p>
+</dd><dt>minitest-english            
+<dd>
+<p>Semantically symmetric aliases for assertions and expectations.</p>
+</dd><dt>minitest-excludes           
+<dd>
+<p>Clean API for excluding certain tests you don’t want to run under certain
+conditions.</p>
+</dd><dt>minitest-firemock           
+<dd>
+<p>Makes your <a href="MiniTest.html">MiniTest</a> mocks more resilient.</p>
+</dd><dt>minitest-great_expectations 
+<dd>
+<p>Generally useful additions to minitest’s assertions and expectations</p>
+</dd><dt>minitest-growl              
+<dd>
+<p>Test notifier for minitest via growl.</p>
+</dd><dt>minitest-implicit-subject   
+<dd>
+<p>Implicit declaration of the test subject.</p>
+</dd><dt>minitest-instrument         
+<dd>
+<p>Instrument ActiveSupport::Notifications when test method is executed</p>
+</dd><dt>minitest-instrument-db      
+<dd>
+<p>Store information about speed of test execution provided by
+minitest-instrument in database</p>
+</dd><dt>minitest-libnotify          
+<dd>
+<p>Test notifier for minitest via libnotify.</p>
+</dd><dt>minitest-macruby            
+<dd>
+<p>Provides extensions to minitest for macruby UI testing.</p>
+</dd><dt>minitest-matchers           
+<dd>
+<p>Adds support for RSpec-style matchers to minitest.</p>
+</dd><dt>minitest-metadata           
+<dd>
+<p>Annotate tests with metadata (key-value).</p>
+</dd><dt>minitest-mongoid            
+<dd>
+<p>Mongoid assertion matchers for <a href="MiniTest.html">MiniTest</a></p>
+</dd><dt>minitest-must_not           
+<dd>
+<p>Provides must_not as an alias for wont in <a
+href="MiniTest.html">MiniTest</a></p>
+</dd><dt>minitest-nc                 
+<dd>
+<p>Test notifier for minitest via Mountain Lion’s Notification Center</p>
+</dd><dt>minitest-predicates         
+<dd>
+<p>Adds support for .predicate? methods</p>
+</dd><dt>minitest-rails              
+<dd>
+<p><a href="MiniTest.html">MiniTest</a> integration for Rails 3.x</p>
+</dd><dt>minitest-rails-capybara     
+<dd>
+<p>Capybara integration for MiniTest::Rails</p>
+</dd><dt>minitest-reporters          
+<dd>
+<p>Create customizable <a href="MiniTest.html">MiniTest</a> output formats</p>
+</dd><dt>minitest-should_syntax      
+<dd>
+<p>RSpec-style +x.should == y+ assertions for <a
+href="MiniTest.html">MiniTest</a></p>
+</dd><dt>minitest-shouldify          
+<dd>
+<p>Adding all manner of shoulds to <a href="MiniTest.html">MiniTest</a> (bad
+idea)</p>
+</dd><dt>minitest-spec-context       
+<dd>
+<p>Provides rspec-ish context method to MiniTest::Spec</p>
+</dd><dt>minitest-spec-magic         
+<dd>
+<p>Minitest::Spec extensions for Rails and beyond</p>
+</dd><dt>minitest-spec-rails         
+<dd>
+<p>Drop in MiniTest::Spec superclass for ActiveSupport::TestCase.</p>
+</dd><dt>minitest-stub-const         
+<dd>
+<p>Stub constants for the duration of a block</p>
+</dd><dt>minitest-tags               
+<dd>
+<p>add tags for minitest</p>
+</dd><dt>minitest-wscolor            
+<dd>
+<p>Yet another test colorizer.</p>
+</dd><dt>minitest_owrapper           
+<dd>
+<p>Get tests results as a TestResult object.</p>
+</dd><dt>minitest_should             
+<dd>
+<p>Shoulda style syntax for minitest test::unit.</p>
+</dd><dt>minitest_tu_shim            
+<dd>
+<p>minitest_tu_shim bridges between test/unit and minitest.</p>
+</dd><dt>mongoid-minitest            
+<dd>
+<p><a href="MiniTest.html">MiniTest</a> matchers for Mongoid.</p>
+</dd><dt>pry-rescue                  
+<dd>
+<p>A pry plugin w/ minitest support. See pry-rescue/minitest.rb.</p>
+</dd></dl>
+
+<h2 id="module-MiniTest-label-Unknown+Extensions%3A">Unknown Extensions:<span><a href="#module-MiniTest-label-Unknown+Extensions%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Authors… Please send me a pull request with a description of your minitest
+extension.</p>
+<ul><li>
+<p>assay-minitest</p>
+</li><li>
+<p>detroit-minitest</p>
+</li><li>
+<p>em-minitest-spec</p>
+</li><li>
+<p>flexmock-minitest</p>
+</li><li>
+<p>guard-minitest</p>
+</li><li>
+<p>guard-minitest-decisiv</p>
+</li><li>
+<p>minitest-activemodel</p>
+</li><li>
+<p>minitest-ar-assertions</p>
+</li><li>
+<p>minitest-capybara-unit</p>
+</li><li>
+<p>minitest-colorer</p>
+</li><li>
+<p>minitest-deluxe</p>
+</li><li>
+<p>minitest-extra-assertions</p>
+</li><li>
+<p>minitest-rails-shoulda</p>
+</li><li>
+<p>minitest-spec</p>
+</li><li>
+<p>minitest-spec-should</p>
+</li><li>
+<p>minitest-sugar</p>
+</li><li>
+<p>minitest_should</p>
+</li><li>
+<p>mongoid-minitest</p>
+</li><li>
+<p>spork-minitest</p>
+</li></ul>
+
+<h2 id="module-MiniTest-label-REQUIREMENTS%3A">REQUIREMENTS:<span><a href="#module-MiniTest-label-REQUIREMENTS%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+<ul><li>
+<p>Ruby 1.8, maybe even 1.6 or lower. No magic is involved.</p>
+</li></ul>
+
+<h2 id="module-MiniTest-label-INSTALL%3A">INSTALL:<span><a href="#module-MiniTest-label-INSTALL%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<pre>sudo gem install minitest</pre>
+
+<p>On 1.9, you already have it. To get newer candy you can still install the
+gem, but you’ll need to activate the gem explicitly to use it:</p>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">'rubygems'</span>
+<span class="ruby-identifier">gem</span> <span class="ruby-string">'minitest'</span> <span class="ruby-comment"># ensures you're using the gem, and not the built in MT</span>
+<span class="ruby-identifier">require</span> <span class="ruby-string">'minitest/autorun'</span>
+
+<span class="ruby-comment"># ... usual testing stuffs ...</span>
+</pre>
+
+<p>DO NOTE: There is a serious problem with the way that ruby 1.9/2.0 packages
+their own gems. They install a gem specification file, but don’t install
+the gem contents in the gem path. This messes up Gem.find_files and many
+other things (gem which, gem contents, etc).</p>
+
+<p>Just install minitest as a gem for real and you’ll be happier.</p>
+
+<h2 id="module-MiniTest-label-LICENSE%3A">LICENSE:<span><a href="#module-MiniTest-label-LICENSE%3A">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>(The MIT License)</p>
+
+<p>Copyright © Ryan Davis, seattle.rb</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the ‘Software’),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="backtrace_filter-attribute-method" class="method-detail">
+          <a name="backtrace_filter"></a>
+          
+          <a name="backtrace_filter="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">backtrace_filter</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description 245">
+          
+          <p>Filter object for backtraces.</p>
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+    </div><!-- 5Buntitled-5D -->
+  
+  <div id='tx_MiniTest_versioned' class='associated_wrapper'></div><script type='text/javascript'>$("#tx_MiniTest_versioned").load("/associated/2.1.2/MiniTest.html");</script> <div id='tx_MiniTest' class='associated_wrapper'></div><script type='text/javascript'>$("#tx_MiniTest").load("/associated/MiniTest.html");</script> 
+      
+  </div><!-- documentation -->
+  <div id='dynamic'>
+  </div>
+      
+<div class='grids wrapper' id="footer">
+  <p><small>This page was generated for Ruby 2.1.2</small></p> 
+  
+   <p><a href="http://www.ruby-doc.org">Ruby-doc.org</a> is provided by <a href="http://www.jamesbritt.com">James Britt</a> and <a href="http://www.neurogami.com">Neurogami</a>. <a href="http://www.neurogami.com">Maximum R+D</a>.</p>
+ 
+    <p><small>Generated with Ruby-doc Rdoc Generator 0.28.0</small>.</p>
+  </div>
+</div>
+  
+ <script type='text/javascript'>
+$(document).ready(function() {
+      $.ajaxSetup({ cache: false });
+      $("#vulns-alert").load("/associated/vulns.html");
+    });
+
+    </script>
+
+
+ 
+    <script type='text/javascript'>
+
+  function loadPlus(plusdocs){
+    var img_h = $("img.carbonad-image").css('height');
+    //if(img_h != undefined) { //---
+      $(plusdocs).find("div[class='associated_wrapper']").each (function() {
+          $("#" + this.id).append($(plusdocs).find("#" + this.id ));
+          });
+    //} // ---
+  } // end loadPlusdocs
+
+
+$(document).ready(function() {
+    $.ajaxSetup({ cache: false });
+      $.get('/associated/2.1.2/plus_MiniTest.html', 
+      function(plusdocs) {
+      setTimeout(function() {
+        loadPlus(plusdocs);
+        }, 2000);
+      }
+      );
+    });
+</script>
+		
+</body>
+</html>
+
+
