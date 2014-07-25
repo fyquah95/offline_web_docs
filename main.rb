@@ -3,7 +3,7 @@ require "socket"
 require "uri"
 
 WEB_ROOT = './public'
-
+PORT_NUMBER = ARGV[0] ? ARGV[0].to_i : 1234
 CONTENT_TYPE_MAPPING = {
 	'html' => 'text/html',
 	'txt' => 'text/txt',
@@ -35,10 +35,13 @@ def requested_file request_line
 	File.join("#{WEB_ROOT}" , *clean)
 end
 
-server = TCPServer.new("localhost" , 1234)
+server = TCPServer.new("localhost" , PORT_NUMBER)
+puts "Establishing server , currently listening the localhost at port #{PORT_NUMBER}"
 loop do
 	socket = server.accept
 	request_line = socket.gets
+	next unless socket
+	unext unless request_line
 
 	STDERR.puts request_line
 	path = requested_file(request_line)
