@@ -37,6 +37,11 @@ end
 
 server = TCPServer.new("localhost" , PORT_NUMBER)
 puts "Establishing server , currently listening the localhost at port #{PORT_NUMBER}"
+trap("SIGINT") { 
+	puts "Ending the server" 
+	puts "Closing the connection at #{PORT_NUMBER}"
+	exit
+}
 loop do
 	socket = server.accept
 	request_line = socket.gets
