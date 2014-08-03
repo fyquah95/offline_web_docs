@@ -2,8 +2,8 @@
 require "socket"
 require "uri"
 
-WEB_ROOT = './public'
-PORT_NUMBER = ARGV[0] ? ARGV[0].to_i : 1234
+WEB_ROOT = '/home/fyquah/dev/offline_web_docs/public'
+PORT_NUMBER = ARGV[0] ? ARGV[0].to_i : 9876
 CONTENT_TYPE_MAPPING = {
 	'html' => 'text/html',
 	'txt' => 'text/txt',
@@ -37,11 +37,8 @@ end
 
 server = TCPServer.new("localhost" , PORT_NUMBER)
 puts "Establishing server , currently listening the localhost at port #{PORT_NUMBER}"
-trap("SIGINT") { 
-	puts "Ending the server" 
-	puts "Closing the connection at #{PORT_NUMBER}"
-	exit
-}
+Process.daemon
+
 loop do
 	socket = server.accept
 	request_line = socket.gets
